@@ -28,7 +28,7 @@ int main() {
   static char buf[1000];
   int offset = 0;
   for (int i = 0; i < 6; i++) {
-    offset += sprintf(buf + offset, "pow(2, %d/6) = %s\n", i, double_to_hex(pow(2, i/6.0)));
+    offset += sprintf(buf + offset, "pow(2, %d/6) = %s\n", i, double_to_hex(pow((double)(2), (double)(i)/(double)(6.0))));
   }
   if (!roundoff_ok()) {
     printf("Error --  unexpected roundoff error!\n");
