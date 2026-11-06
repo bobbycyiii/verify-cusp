@@ -15,7 +15,7 @@ make identify
 make tests
 ```
 One should run the `test_*` tests from the `bin` directory before any verification code to make sure that your system correctly catches any overflow and underflow.
-To run the proof of Proposition 2.15, from the `bin` directory execute:
+To run the proof of Proposition 2.15, first unzip all the `.zip` files in the `data/verify` directory, then from the `bin` directory execute:
 ```
 ./rootcat ../data/verify | ./verify
 ```
